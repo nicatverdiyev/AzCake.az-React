@@ -31,7 +31,12 @@ function Navbar(params) {
     <>
       <nav className="navbar">
         <Link to="/" className="navbar-logo">
-          AZCAKE
+          AZCAKE{" "}
+          <lord-icon
+            src="https://cdn.lordicon.com/hicajugo.json"
+            trigger="hover"
+            style={{ width: 50, height: 50 }}
+          ></lord-icon>
         </Link>
 
         <div className="menu-icon" onClick={hadnleClick}>
