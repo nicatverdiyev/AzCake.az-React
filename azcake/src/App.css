@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+.home,
+.shop,
+.contact-us,
+.sign-up,
+.allcakes,
+.readycakes,
+.minicakes,
+.cheesecake,
+.giftbox,
+.decoratedcakes,
+.flowers,
+.engagemen-wedding,
+.food {
+  display: flex;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+}
