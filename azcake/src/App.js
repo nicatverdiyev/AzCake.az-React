@@ -1,22 +1,22 @@
 import React from "react";
 import "./Components/img/head.png";
 import "./App.css";
-import Navbar from "./Components/Navbar";
-import Home from "./Components/pages/Home";
+import Navbar from "./Components/Navbar/Navbar";
+import Home from "./Components/pages/Home/Home";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import About from "./Components/pages/About";
-import Shop from "./Components/pages/Shop";
-import ContactUs from "./Components/pages/ContactUs";
-import Allcake from "./Components/pages/Allcake";
-import cheesecake from "./Components/pages/Cheesecake";
-import Decoratedcakes from "./Components/pages/Decoratedcake";
-import Engagement from "./Components/pages/Engagement";
-import Flowers from "./Components/pages/Flowers";
-import Food from "./Components/pages/Food";
-import Giftbox from "./Components/pages/Giftbox";
-import Minicake from "./Components/pages/Minicake";
-import Readycakes from "./Components/pages/Readycakes";
-import SignUp from "./Components/pages/SignUp";
+import About from "./Components/pages/About/About";
+import Shop from "./Components/pages/Shop/Shop";
+import ContactUs from "./Components/pages/Contact/ContactUs";
+import Allcake from "./Components/pages/Allcake/Allcake";
+import cheesecake from "./Components/pages/Cheesecake/Cheesecake";
+import Decoratedcakes from "./Components/pages/Decoratedcake/Decoratedcake";
+import Engagement from "./Components/pages/Engagementcake/Engagement";
+import Flowers from "./Components/pages/Flowers/Flowers";
+import Food from "./Components/pages/Food/Food";
+import Giftbox from "./Components/pages/Giftbox/Giftbox";
+import Minicake from "./Components/pages/Minicake/Minicake";
+import Readycakes from "./Components/pages/Readycake/Readycakes";
+import SignUp from "./Components/pages/Signup/SignUp";
 
 function App() {
   return (
