@@ -31,7 +31,6 @@ body {
   align-items: center;
   position: relative;
 }
-
 .swiper-slide img {
   display: block;
   width: 100%;
@@ -53,7 +52,6 @@ body {
   font-weight: bold;
   color: #e34c80;
 }
-
 .autoplay-progress svg {
   --progress: 0;
   position: absolute;
@@ -70,14 +68,6 @@ body {
   transform: rotate(-90deg);
 }
 
-@media screen and (max-width: 992px) {
-  .swiper-slide img {
-    height: 100% !important;
-  }
-  .slider-text-1 {
-    display: none;
-  }
-}
 .slider-text-1 {
   position: absolute;
   bottom: 200px;
@@ -127,4 +117,13 @@ body {
 
 .swiper-button-prev::after {
   color: #e34c80;
+}
+
+@media screen and (max-width: 992px) {
+  .swiper-slide img {
+    height: 100% !important;
+  }
+  .slider-text-1 {
+    display: none;
+  }
 }/*# sourceMappingURL=home.css.map */

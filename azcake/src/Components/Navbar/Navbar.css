@@ -9,8 +9,7 @@
   z-index: 100000;
   width: 100%;
 }
-
-.navbar-logo {
+.navbar .navbar-logo {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -37,8 +36,7 @@
   justify-content: end;
   margin-right: 2rem;
 }
-
-.nav-item {
+.nav-menu .nav-item {
   display: flex;
   align-items: center;
   height: 80px;
@@ -49,7 +47,6 @@
   text-decoration: none;
   padding: 0.5rem 1rem;
 }
-
 .nav-links:hover {
   background-color: #e34c80;
   border-radius: 4px;

@@ -1,4 +1,5 @@
 import React, { useRef, useState } from "react";
+import Link from "react-router-dom";
 import "../Home/home.css";
 import img1 from "../../img/slider-1.jpeg";
 import img2 from "../../img/slider-2.jpeg";
@@ -83,7 +84,7 @@ export default function Home() {
               <br />
               Living.
             </h2>
-            <a href="/">
+            <a href="/shop">
               <button class="btn_carousel">Check Our Menu</button>
             </a>
           </div>
