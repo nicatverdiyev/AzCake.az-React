@@ -1,16 +1,78 @@
-import React from "react";
+import React, { useState } from "react";
 import Nav from "../../Navigation/Navigation.jsx";
 import Products from "./Products/Products.jsx";
 import Recommended from "./Recommended/Recommended.jsx";
 import Sidebar from "./Sidebar/Sidebar.jsx";
+// import "../Shop/data/data.js";
+import products from "./data/data.js";
+import Card from "./Card.jsx";
 
 export default function Shop() {
+  const [selectedCategory, setSelectedCategory] = useState(null);
+
+  // İnput filter etme
+
+  const [query, setQuery] = useState("");
+
+  const handleInputChange = (event) => {
+    setQuery(event.target.value);
+  };
+
+  const filteredItems = products.filter((product) =>
+    product.title.toLocaleLowerCase().indexOf(query.toLocaleLowerCase() !== -1)
+  );
+
+  // Radio Filter
+  const handleChange = (event) => {
+    setSelectedCategory(event.target.value);
+  };
+
+  // Button filter
+
+  const handleClick = (event) => {
+    setSelectedCategory(event.target.value);
+  };
+
+  function filteredData(products, selected, query) {
+    let filteredProducts = products;
+
+    if (query) {
+      filteredProducts = filteredItems;
+    }
+
+    if (selected) {
+      filteredProducts = filteredProducts.filter(
+        ({ category, color, company, newPrice, title }) =>
+          category === selected ||
+          color === selected ||
+          company === selected ||
+          newPrice == selected ||
+          title === selected
+      );
+    }
+
+    return filteredProducts.map(
+      ({ img, title, star, reviews, newPrice, prevPrice }) => (
+        <Card
+          key={Math.random()}
+          img={img}
+          title={title}
+          star={star}
+          reviews={reviews}
+          newPrice={newPrice}
+          prevPrice={prevPrice}
+        />
+      )
+    );
+  }
+  const result = filteredData(products, selectedCategory, query);
+
   return (
-    <section style={{ position: "relative", top: 80 }}>
-      <Sidebar />
-      <Nav />
-      <Recommended />
-      <Products />
+    <section style={{ position: "relative", top: 72 }}>
+      <Sidebar handleChange={handleChange} />
+      <Nav query={query} handleChange={handleChange} />
+      <Recommended handleClick={handleClick} />
+      <Products result={result} />
     </section>
   );
 }

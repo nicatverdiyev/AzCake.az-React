@@ -33,7 +33,8 @@
         border-radius: 50%;
     }
 }
-.sidebar-label-container:hover input ~ .checkmark{
+// .sidebar-label-container:hover input ~ .checkmark yaza bilerik.
+.sidebar-label-container input ~ .checkmark{
     background-color: #ccc;
 }
 .sidebar-label-container input:checked ~ .checkmark{

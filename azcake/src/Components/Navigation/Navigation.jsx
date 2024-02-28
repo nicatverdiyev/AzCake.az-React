@@ -8,7 +8,7 @@ import "../Navigation/navigation.css";
 
 function Nav() {
   return (
-    <nav>
+    <nav className="nav">
       <div className="nav-container">
         <input
           type="text"
