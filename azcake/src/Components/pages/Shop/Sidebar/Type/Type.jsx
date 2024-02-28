@@ -8,25 +8,25 @@ function Type({ handleChange }) {
       <h2 className="sidebar-title type-title">Type</h2>
       <label className="sidebar-label-container">
         <input onChange={handleChange} type="radio" value="" name="test2" />
-        <span className="checkmark"></span>All
+        {/* <span className="checkmark"></span>All */}
       </label>
 
       <Input
         handleChange={handleChange}
-        value="sneakers"
-        title="Sneakers"
+        value="flats"
+        title="Breakfast"
         name="test"
       />
       <Input
         handleChange={handleChange}
-        value="sneakers"
-        title="Sneakers"
+        value="lunch"
+        title="Lunch"
         name="test"
       />
       <Input
         handleChange={handleChange}
-        value="sneakers"
-        title="Sneakers"
+        value="salad"
+        title="Salads"
         name="test"
       />
     </div>

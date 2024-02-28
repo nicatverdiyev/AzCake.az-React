@@ -13,11 +13,11 @@ function Card({ img, title, star, reviews, newPrice, prevPrice }) {
           <FaStar className="rating-start" />
           <FaStar className="rating-start" />
           <FaStar className="rating-start" />
-          <span className="total-reviews">4</span>
+          <span className="total-reviews">{reviews} </span>
         </section>
         <section className="card-price">
           <div className="price">
-            <del>₼35</del> 15
+            <del>{prevPrice} </del> {newPrice}
           </div>
           <div className="bag">
             <BsFillBagHeartFill className="bag-icons" />

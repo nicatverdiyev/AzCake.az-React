@@ -13,6 +13,9 @@
 }
 .card-container .card .card-img {
   width: 13rem;
+  height: 10rem;
+  -o-object-fit: cover;
+     object-fit: cover;
   margin-bottom: 1rem;
 }
 
