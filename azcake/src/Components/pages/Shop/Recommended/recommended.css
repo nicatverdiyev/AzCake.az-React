@@ -11,7 +11,7 @@
 
 .recommended-flex {
   display: flex;
-  margin-left: 20rem;
+  margin-left: 15rem;
 }
 
 .recommended-title {
@@ -20,4 +20,28 @@
   margin-top: 20px;
   font-size: 20px;
   font-family: sans-serif;
+}
+
+@media screen and (max-width: 600px) {
+  .recommended-flex {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 12rem !important;
+  }
+  .btns {
+    width: 145px !important;
+    margin-bottom: 10px;
+  }
+  .recommended-title {
+    margin-left: 12rem !important;
+  }
+}
+@media screen and (min-width: 992px) {
+  .recommended-flex {
+    display: flex;
+    margin-left: 23.9rem !important;
+  }
+  .recommended-title {
+    margin-left: 25rem !important;
+  }
 }/*# sourceMappingURL=recommended.css.map */

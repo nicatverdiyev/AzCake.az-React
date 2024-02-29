@@ -2,7 +2,7 @@
   --primary: #e34c80;
 }
 
-.btn {
+.butn {
   padding: 8px 20px;
   border-radius: 4px;
   outline: none;
@@ -13,7 +13,7 @@
   background-color: #e34c80;
   transition: 0.6s;
 }
-.btn:hover {
+.butn:hover {
   background-color: transparent;
   border: 2px solid var(--primary);
 }/*# sourceMappingURL=Button.css.map */

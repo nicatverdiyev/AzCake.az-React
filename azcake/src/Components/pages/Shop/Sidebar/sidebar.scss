@@ -4,7 +4,7 @@
     margin-bottom: 20px;
 }
 .sidebar{
-    width: 15%;
+    width: 20%;
     position: fixed;
     height: 100%;
     border-right: 2px solid#e5e5e5;
@@ -22,4 +22,16 @@
             font-size: 30px;
         }
     }
+}
+@media screen and (max-width:600px) {
+    .sidebar{
+        width: 38%;
+    }
+    
+}
+@media screen and (min-width:992px) {
+    .sidebar{
+        width: 16% !important;
+    }
+    
 }
