@@ -1,8 +1,13 @@
 import React, { useRef, useState } from "react";
-import Link from "react-router-dom";
 import "../Home/home.css";
 import img1 from "../../img/slider-1.jpeg";
 import img2 from "../../img/slider-2.jpeg";
+import data from "../Shop/data/data";
+import "../Shop/Products/products.css";
+import { BsFillBagHeartFill } from "react-icons/bs";
+import { FaStar } from "react-icons/fa";
+
+// import Container from "@mui/material/Container";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -23,6 +28,7 @@ import {
   Scrollbar,
   A11y,
 } from "swiper/modules";
+// import { Container } from "@mui/material";
 
 export default function Home() {
   const progressCircle = useRef(null);
@@ -31,6 +37,15 @@ export default function Home() {
     progressCircle.current.style.setProperty("--progress", 50 - progress);
     progressContent.current.textContent = `${Math.ceil(time / 1000)}s`;
   };
+
+  // --------------------------------------------
+
+  const [swiperRef, setSwiperRef] = useState(null);
+
+  let appendNumber = 20;
+  let prependNumber = 1;
+
+  // --------------------------------------------
 
   return (
     <>
@@ -60,7 +75,7 @@ export default function Home() {
         className="mySwiper"
       >
         <SwiperSlide className="slider-img">
-          <img src={img1} alt="" />
+          <img className="img" src={img1} alt="" />
           <div className="slider-text-1">
             <h2>
               Cooking.
@@ -75,7 +90,7 @@ export default function Home() {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={img2} alt="" />
+          <img className="img" src={img2} alt="" />
           <div className="slider-text-1">
             <h2>
               Cooking.
@@ -97,6 +112,60 @@ export default function Home() {
           <span ref={progressContent}></span>
         </div>
       </Swiper>
+
+      <section className="home-head-2">
+        <div className="slider-head-1 flex justify-center font-bold text-6xl mb-[70px]">
+          <h2>All Cakes</h2>
+        </div>
+
+        <Swiper
+          breakpoints={{
+            390: {
+              width: 390,
+              slidesPerView: 1,
+            },
+          }}
+          onSwiper={setSwiperRef}
+          slidesPerView={3}
+          centeredSlides={true}
+          spaceBetween={30}
+          loop={true}
+          pagination={{
+            type: "fraction",
+          }}
+          navigation={true}
+          modules={[Pagination, Navigation, A11y]}
+          className="mySwiper"
+        >
+          {data.map(({ title, img, reviews, newPrice, prevPrice }) => {
+            return (
+              <SwiperSlide>
+                <section className="card flex flex-col items-center">
+                  <img src={img} alt={title} className="card-img" />
+                  <div className="card-details">
+                    <h3 className="card-title">{title} </h3>
+                    <section className="card-reviews">
+                      <FaStar className="rating-start" />
+                      <FaStar className="rating-start" />
+                      <FaStar className="rating-start" />
+                      <FaStar className="rating-start" />
+                      <span className="total-reviews">{reviews} </span>
+                    </section>
+                    <section className="card-price">
+                      <div className="price">
+                        <del>{prevPrice} </del> {newPrice}
+                      </div>
+                      <div className="bag">
+                        <BsFillBagHeartFill className="bag-icons" />
+                      </div>
+                    </section>
+                  </div>
+                </section>
+              </SwiperSlide>
+            );
+          })}
+        </Swiper>
+      </section>
     </>
   );
 }

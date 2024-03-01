@@ -6,6 +6,7 @@ import Sidebar from "./Sidebar/Sidebar.jsx";
 // import "../Shop/data/data.js";
 import products from "./data/data.js";
 import Card from "./Card.jsx";
+// import Readycakes from "../Readycake/Readycakes.jsx";
 
 export default function Shop() {
   const [selectedCategory, setSelectedCategory] = useState(null);
