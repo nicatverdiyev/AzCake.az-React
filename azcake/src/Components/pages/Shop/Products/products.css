@@ -6,6 +6,7 @@
   z-index: -2;
 }
 .card-container .card {
+  width: 230px;
   margin: 20px;
   border: 2px solid #eae7e7;
   padding: 20px;

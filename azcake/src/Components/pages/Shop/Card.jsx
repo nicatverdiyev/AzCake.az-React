@@ -13,8 +13,8 @@ function Card({ img, title, star, reviews, newPrice, prevPrice }) {
           <FaStar className="rating-start" />
           <FaStar className="rating-start" />
           <FaStar className="rating-start" />
-          <span className="total-reviews">{reviews} </span>
         </section>
+        <span className="total-reviews">{reviews} </span>
         <section className="card-price">
           <div className="price">
             <del>{prevPrice} </del> {newPrice}
