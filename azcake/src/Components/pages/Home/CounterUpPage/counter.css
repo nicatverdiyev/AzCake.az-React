@@ -16,6 +16,7 @@
 .funfacts .counterup-main {
   width: 100%;
   height: 400px;
+  gap: 10px;
   color: white;
   display: flex;
   justify-content: space-around;
@@ -45,5 +46,8 @@
   .countup-box {
     width: auto !important;
     text-align: center;
+  }
+  .countup-num {
+    padding: 24px !important;
   }
 }/*# sourceMappingURL=counter.css.map */

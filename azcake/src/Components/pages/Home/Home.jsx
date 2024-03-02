@@ -121,8 +121,8 @@ export default function Home() {
 
         <Swiper
           breakpoints={{
-            390: {
-              width: 390,
+            360: {
+              width: 360,
               slidesPerView: 1,
             },
           }}
