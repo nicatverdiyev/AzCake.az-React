@@ -28,6 +28,7 @@ import {
   Scrollbar,
   A11y,
 } from "swiper/modules";
+import CounterUpPage from "./CounterUpPage/CounterUpPage";
 // import { Container } from "@mui/material";
 
 export default function Home() {
@@ -166,6 +167,8 @@ export default function Home() {
           })}
         </Swiper>
       </section>
+
+      <CounterUpPage />
     </>
   );
 }
