@@ -29,6 +29,7 @@ import {
   A11y,
 } from "swiper/modules";
 import CounterUpPage from "./CounterUpPage/CounterUpPage";
+import AboutPage from "./AbotPage/AboutPage";
 // import { Container } from "@mui/material";
 
 export default function Home() {
@@ -169,6 +170,7 @@ export default function Home() {
       </section>
 
       <CounterUpPage />
+      <AboutPage />
     </>
   );
 }

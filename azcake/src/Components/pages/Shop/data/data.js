@@ -42,7 +42,7 @@ const data = [
     title: "Banana Caramel Cake",
     star: <AiFillStar className="rating-star" />,
     reviews:
-      "Introducing our Chocolate-Covered Strawberry Box, a delectable assortment of 800g of luscious, hand-dipped strawberries coated in rich, velvety chocolate.",
+      "Introducing our Chocolate-Covered Strawberry Box, a delectable assortment of 800g of luscious, hand-dipped strawberries coated in rich.",
     prevPrice: "$140,00",
     newPrice: "50",
     company: "Adidas",
@@ -55,7 +55,7 @@ const data = [
     title: "Turkish Cake",
     star: <AiFillStar className="rating-star" />,
     reviews:
-      "This exquisite dessert features a delicate choux pastry shell filled with a rich and velvety chocolate custerd, delivering a heavenly combination of textures and flavors.",
+      "This exquisite dessert features a delicate choux pastry shell filled with a rich and velvety chocolate custerd, delivering a heavenly combination of textures.",
     prevPrice: "$140,00",
     newPrice: "50",
     company: "Vans",
@@ -93,7 +93,7 @@ const data = [
     title: "Carrot Cake S",
     star: <AiFillStar className="rating-star" />,
     reviews:
-      "This exquisite creation boasts three layers of rich, moist chocolate sponge cake, expertly crafted to perfection. But what truly sets this cake apart is the indulgent secret.",
+      "This exquisite creation boasts three layers of rich, expertly crafted to perfection. But what truly sets this cake apart is the indulgent secret.",
     prevPrice: "$140,00",
     newPrice: "200",
     company: "Adidas",
@@ -106,7 +106,7 @@ const data = [
     title: "Ferrero Roche Cake S",
     star: <AiFillStar className="rating-star" />,
     reviews:
-      "Introducing our heavenly Maltesers Cake, a true delight for chocolate and malt lovers. This indulgent creation features three layers of moist chocolate sponge cake",
+      "Introducing our heavenly Maltesers Cake, a true delight for chocolate and malt lovers. This indulgent creation features three layers of moist chocolate.",
     prevPrice: "$140,00",
     newPrice: "150",
     company: "Puma",
