@@ -13,7 +13,11 @@ function CounterUpPage() {
     >
       <section className="funfacts">
         <div className="counterup-head">
-          <h2>Fun Facts</h2>
+          <h2 className="text-white">
+            {" "}
+            <span className="text-black mr-[10px] "> Fun </span>
+            Facts
+          </h2>
         </div>
         <div className="counterup-main">
           <div className="countup-box">

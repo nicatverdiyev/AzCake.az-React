@@ -117,7 +117,10 @@ export default function Home() {
 
       <section className="home-head-2">
         <div className="slider-head-1 flex justify-center font-bold text-6xl mb-[70px]">
-          <h2>All Cakes</h2>
+          <h2 className="text-white">
+            All
+            <span className="text-stone-400">Cakes</span>
+          </h2>
         </div>
 
         <Swiper
@@ -144,7 +147,7 @@ export default function Home() {
               <SwiperSlide>
                 <section className="card flex flex-col items-center">
                   <img src={img} alt={title} className="card-img" />
-                  <div className="card-details">
+                  <div className="card-details text-white">
                     <h3 className="card-title">{title} </h3>
                     <section className="card-reviews">
                       <FaStar className="rating-start" />

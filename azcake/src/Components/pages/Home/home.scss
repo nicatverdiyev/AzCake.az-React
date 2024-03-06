@@ -145,7 +145,10 @@ body {
 }
 
 .home-head-2{
-  margin-top: 3rem;
+  // margin-top: 3rem;
+  background-image: url(../../../Components/img/azcake.jpeg);
+  background-attachment: fixed;
+  
 
   & h2{
     font-family: "AbrilFatface-Regular" !important;

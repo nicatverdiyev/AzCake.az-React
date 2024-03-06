@@ -1,0 +1,91 @@
+.main-page img {
+    background-image: url(../../../img/azcake.jpeg);
+    background-attachment: fixed;
+  }
+  .mini-cake {
+    margin-left: 42.5rem;
+  }
+  @media screen and (max-width: 800px) {
+    .mini-cake {
+      margin-left: 21rem;
+    }
+  }
+  @media screen and (max-width: 400px) {
+    .mini-cake {
+      margin-left: 9rem;
+    }
+    .box-image img {
+      margin-left: 13px !important;
+      width: 450px !important;
+    }
+    hr {
+      margin-left: 1rem !important;
+    }
+    .slider-text {
+        & p {
+            font-size: 12px;
+            margin-left: 0 !important;
+          }
+         
+    }
+  }
+  .about-us-main{
+    background-image: url(../../../img/azcake.jpeg);
+    background-attachment: fixed;
+  }
+  .swiper-div {
+    height: 350px;
+    margin-top: 128px;
+    /* background-image: url(../../../../Components/img/special-recipe.jpg); */
+    background-image: url(../../../../Components/img/special-recipe.jpg);
+    background-attachment: fixed;
+    object-fit: cover;
+  }
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    background: transparent;
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .swiper-slide {
+
+    & img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+  }
+  .slider-box-1 {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .box-image img {
+    width: 200px;
+    margin-left: 160px;
+  }
+  hr {
+    width: 2px;
+    border-radius: 50%;
+    height: 100%;
+    background: #fff;
+    margin-left: 13rem;
+  }
+  .slider-text {
+    & p{
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+  }
+  

@@ -1,15 +1,12 @@
 .funfacts {
   background-image: url(../../../img/slider-1.jpeg);
   background-position: center;
-  margin-top: 3rem;
-}
-.funfacts .counterup-head {
-  margin-top: 20px;
+  background-attachment: fixed;
 }
 .funfacts .counterup-head h2 {
   display: flex;
   justify-content: center;
-  font-size: 40px;
+  font-size: 50px;
   color: #fff;
   font-weight: 700;
 }
@@ -36,7 +33,7 @@
   font-weight: 500;
 }
 .funfacts .counterup-main .countup-box .countup-num {
-  background: #e34c80;
+  background: rgba(227, 76, 129, 0.7921568627);
   padding: 40px;
   border-bottom-left-radius: 20px;
   border-top-right-radius: 20px;

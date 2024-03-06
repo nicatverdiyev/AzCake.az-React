@@ -130,7 +130,8 @@ body {
   }
 }
 .home-head-2 {
-  margin-top: 3rem;
+  background-image: url(../../../Components/img/azcake.jpeg);
+  background-attachment: fixed;
 }
 .home-head-2 h2 {
   font-family: "AbrilFatface-Regular" !important;

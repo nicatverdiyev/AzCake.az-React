@@ -14,6 +14,8 @@ const data = [
     category: "sneakers",
   },
   {
+    id: 5,
+
     img: "https://cakeshopco.com/content/products/293957/65f1b9d07d8d47aea99cf0412e2a7085_400x400.jpg",
     title: "Date Cake",
     star: <AiFillStar className="rating-star" />,
@@ -51,6 +53,8 @@ const data = [
   },
 
   {
+    id: 5,
+
     img: "https://www.foodandwine.com/thmb/OH220PwOZfcTiwuJzkvLANWHw1w=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/egg-bhurjee-FT-RECIPE0521-f9573d8c81bb4c9597a9621c0ac064ae.jpg",
     title: "Turkish Cake",
     star: <AiFillStar className="rating-star" />,
@@ -76,6 +80,8 @@ const data = [
   },
 
   {
+    id: 5,
+
     img: "https://cakeshopco.com/content/products/293960/9ec4cf439d23423eb106f42d3ac8dec6_400x400.jpg",
     title: "Red Velvet Cake S",
     star: <AiFillStar className="rating-star" />,
@@ -102,6 +108,8 @@ const data = [
   },
 
   {
+    id: 5,
+
     img: "https://cakeshopco.com/content/products/293970/e5a9b7eb42864beba76d70fd68ce2a68_400x400.jpg",
     title: "Ferrero Roche Cake S",
     star: <AiFillStar className="rating-star" />,
@@ -166,7 +174,8 @@ const data = [
     img: "https://cakeshopco.com/content/products/294002/ab7b6738a2f74077b9d50df3a2036250_400x400.jpg",
     title: "Cheese Cake Lotus",
     star: <AiFillStar className="rating-star" />,
-    reviews: "(123 reviews)",
+    reviews:
+      "Turkish cake is soaked in 3 kinds of milk - Evaporated Milk, Condensed Milk and Double Cream. It is topped with whipped cream and a dark Caramel.",
     prevPrice: "$140,00",
     newPrice: "100",
     company: "Puma",
@@ -177,7 +186,8 @@ const data = [
     img: "https://colonydiner.com/wp-content/uploads/2021/03/French.jpg",
     title: "Mille-Feullie",
     star: <AiFillStar className="rating-star" />,
-    reviews: "(123 reviews)",
+    reviews:
+      "Introducing our Chocolate-Covered Strawberry Box, a delectable assortment of 800g of luscious, hand-dipped strawberries coated in rich.",
     prevPrice: "$140,00",
     newPrice: "100",
     company: "Vans",
@@ -188,7 +198,8 @@ const data = [
     img: "https://cakeshopco.com/content/products/293953/a02be87797c44d2e9224e72af0bfe699_400x400.jpg",
     title: "Croquant Cake L",
     star: <AiFillStar className="rating-star" />,
-    reviews: "(123 reviews)",
+    reviews:
+      "Our cakes are works of art specially made for you. If you would like to receive a quote. We book fast so make sure to place your order at least one week in advance.",
     prevPrice: "$140,00",
     newPrice: "200",
     company: "Nike",
@@ -199,7 +210,8 @@ const data = [
     img: "https://cakeshopco.com/content/products/294005/294005_400x400.jpg",
     title: "Lazy Cake",
     star: <AiFillStar className="rating-star" />,
-    reviews: "(123 reviews)",
+    reviews:
+      "Our cakes are works of art specially made for you. If you would like to receive a quote. We book fast so make sure to place your order at least one week in advance.",
     prevPrice: "$140,00",
     newPrice: "100",
     company: "Vans",
@@ -210,7 +222,8 @@ const data = [
     img: "https://cakeshopco.com/content/products/294013/cc3208f8c9974e33adb3dc798436cb99_400x400.jpg",
     title: "German Chocolate Cake",
     star: <AiFillStar className="rating-star" />,
-    reviews: "(123 reviews)",
+    reviews:
+      "Our cakes are works of art specially made for you. If you would like to receive a quote. We book fast so make sure to place your order at least one week in advance.",
     prevPrice: "$140,00",
     newPrice: "100",
     company: "Vans",
@@ -221,7 +234,8 @@ const data = [
     img: "https://cakeshopco.com/content/products/294012/8e3d054d2f504b2e8160e19e1d3300c1_400x400.jpg",
     title: "Elegant Graduation Cake.",
     star: <AiFillStar className="rating-star" />,
-    reviews: "(123 reviews)",
+    reviews:
+      "Our cakes are works of art specially made for you. If you would like to receive a quote. We book fast so make sure to place your order at least one week in advance.",
     prevPrice: "$140,00",
     newPrice: "50",
     company: "Nike",
@@ -243,7 +257,8 @@ const data = [
     img: "https://cakeshopco.com/content/products/294017/294017_400x400.jpg",
     title: "Pink Cream Cake",
     star: <AiFillStar className="rating-star" />,
-    reviews: "(123 reviews)",
+    reviews:
+      "San Sebastian Cheesecake unique dessert originates from the charming city of San Sebastian, Spain, and is known for its rich flavors and velvety texture",
     prevPrice: "$140,00",
     newPrice: "100",
     company: "puma",
@@ -254,7 +269,8 @@ const data = [
     img: "https://www.eatingwell.com/thmb/rmLlvSjdnJCCy_7iqqj3x7XS72c=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/chopped-power-salad-with-chicken-0ad93f1931524a679c0f8854d74e6e57.jpg",
     title: "Chopped Power Salad",
     star: <AiFillStar className="rating-star" />,
-    reviews: "(123 reviews)",
+    reviews:
+      "This exquisite dessert features a delicate choux pastry shell filled with a rich and velvety chocolate custerd, delivering a heavenly combination of textures.",
     prevPrice: "$140,00",
     newPrice: "150",
     company: "Nike",
@@ -265,7 +281,8 @@ const data = [
     img: "https://cakeshopco.com/content/products/294034/69f43bfd35cc4fab8782e241304842d8_400x400.jpg",
     title: "Basic Graduation Cake . (15 Ppl)",
     star: <AiFillStar className="rating-star" />,
-    reviews: "(123 reviews)",
+    reviews:
+      "Our cakes are works of art specially made for you. If you would like to receive a quote. We book fast so make sure to place your order at least one week in advance.",
     prevPrice: "$140,00",
     newPrice: "200",
     company: "Nike",
@@ -277,7 +294,8 @@ const data = [
     img: "https://www.eatingwell.com/thmb/bGhAB_Vm1NUAtliDcrzixylY4SE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/cucumber-vinegar-salad-bb9dbc2435374efb906353dfff2bfe7d.jpg",
     title: "caprese-salad",
     star: <AiFillStar className="rating-star" />,
-    reviews: "(123 reviews)",
+    reviews:
+      "Chicken Macaroni with step-by-step photos and a video recipe. This chicken pasta recipe is made with chicken breast, macaroni pasta, onions, and bell peppers.",
     prevPrice: "$140,00",
     newPrice: "200",
     company: "Nike",
@@ -310,7 +328,8 @@ const data = [
     img: "https://cakeshopco.com/content/products/294141/294141_400x400.jpg",
     title: "Butterflies Cream Cake (10ppl)",
     star: <AiFillStar className="rating-star" />,
-    reviews: "(123 reviews)",
+    reviews:
+      "Our cakes are works of art specially made for you. If you would like to receive a quote. We book fast so make sure to place your order at least one week in advance.",
     prevPrice: "$140,00",
     newPrice: "50",
     company: "Adidas",
