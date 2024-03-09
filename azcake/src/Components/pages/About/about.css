@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   height: 100vh;
   width: 100%;
@@ -48,8 +49,6 @@ body {
   max-width: 700px;
   background-image: url(../../img/about-1.jpeg);
   background-attachment: fixed;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 .about-head-2 .about-box h2, .about-head-2 .about-box h3 {
   color: #e34c80;
@@ -58,4 +57,16 @@ body {
   color: #e1dede;
   font-size: 15px;
   font-weight: bold;
+}
+
+.about-box::before {
+  content: "";
+  background-image: inherit;
+  filter: blur(5px); /* Bulanıklık miktarını ayarlayabilirsiniz */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1; /* Metinlerin önden gelmesini sağlar */
 }/*# sourceMappingURL=about.css.map */

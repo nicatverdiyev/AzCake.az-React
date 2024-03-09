@@ -17,7 +17,7 @@ function Nav() {
         />
       </div>
 
-      <div className="profile-container">
+      <div className="profile-container flex">
         <a href="#">
           <MdFavoriteBorder className="nav-icons" />
         </a>
