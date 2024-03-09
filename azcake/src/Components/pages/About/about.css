@@ -1,0 +1,61 @@
+body {
+  height: 100vh;
+  width: 100%;
+  background-image: url(../../../assets/wave-primary.svg), url(../../../assets/wav.svg);
+  background-repeat: no-repeat;
+  background-size: 65%, 68%;
+  background-position: 130% 15%, 128% 15%;
+  animation: wave 3s cubic-bezier(0.28, 0, 0.41, 1) infinite;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+@keyframes wave {
+  0%, 100% {
+    background-position-x: 130%, 128%;
+  }
+  60% {
+    background-position-x: 140%, 140%;
+  }
+}
+.about-head {
+  position: relative;
+  top: 100px;
+  margin-left: 6rem;
+}
+.about-head .head-text .hr {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: rgb(81, 255, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.about-head .head-text h2 {
+  display: flex;
+}
+
+.about-head-2 {
+  position: relative;
+  top: 200px;
+  justify-content: center;
+  padding: 20px;
+}
+.about-head-2 .about-box {
+  max-width: 700px;
+  background-image: url(../../img/about-1.jpeg);
+  background-attachment: fixed;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.about-head-2 .about-box h2, .about-head-2 .about-box h3 {
+  color: #e34c80;
+}
+.about-head-2 .about-box p {
+  color: #e1dede;
+  font-size: 15px;
+  font-weight: bold;
+}/*# sourceMappingURL=about.css.map */
