@@ -1,6 +1,21 @@
 import React from "react";
 import "../About/about.css";
 
+import data from "../../pages/Shop/data/data";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+
+// import "./styles.css";
+
+// import required modules
+
+import { Mousewheel, Pagination, A11y } from "swiper/modules";
+import Footer from "../../Footer/Footer";
+
 export default function About() {
   return (
     <>
@@ -124,6 +139,50 @@ export default function About() {
           </p>
         </div>
       </section>
+      <section className="about-slider">
+        <div className="swiper-div">
+          <Swiper
+            direction={"vertical"}
+            slidesPerView={1}
+            spaceBetween={30}
+            mousewheel={true}
+            loop={true}
+            pagination={{
+              clickable: true,
+            }}
+            modules={[Mousewheel, Pagination, A11y]}
+            className="mySwiper"
+          >
+            {data
+              .filter((item) => item.newPrice === "200")
+              .map(({ title, img, reviews }) => {
+                return (
+                  <SwiperSlide>
+                    <div className="slider-box-1">
+                      <div className="box-image">
+                        <img src={img} alt="" />
+                      </div>
+
+                      <div>
+                        <hr />
+                      </div>
+
+                      <div className="slider-text">
+                        <h2 className="text-white font-bold">{title} </h2>
+                        <p className="text-white md:px-64 lg:px-80 relative ">
+                          {reviews}{" "}
+                        </p>
+                        <button></button>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                );
+              })}
+          </Swiper>
+        </div>
+      </section>
+
+      <Footer />
     </>
   );
 }

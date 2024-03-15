@@ -41,20 +41,19 @@ body {
 
 .about-head-2 {
   position: relative;
-  top: 200px;
+  top: 120px;
   justify-content: center;
   padding: 20px;
 }
 .about-head-2 .about-box {
   max-width: 700px;
-  background-image: url(../../img/about-1.jpeg);
   background-attachment: fixed;
 }
 .about-head-2 .about-box h2, .about-head-2 .about-box h3 {
   color: #e34c80;
 }
 .about-head-2 .about-box p {
-  color: #e1dede;
+  color: rgba(57, 56, 56, 0.8823529412);
   font-size: 15px;
   font-weight: bold;
 }

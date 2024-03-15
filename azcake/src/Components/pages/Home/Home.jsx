@@ -30,6 +30,7 @@ import {
 } from "swiper/modules";
 import CounterUpPage from "./CounterUpPage/CounterUpPage";
 import AboutPage from "./AbotPage/AboutPage";
+import Footer from "../../Footer/Footer";
 // import { Container } from "@mui/material";
 
 export default function Home() {
@@ -117,7 +118,7 @@ export default function Home() {
 
       <section className="home-head-2">
         <div className="slider-head-1 flex justify-center font-bold text-6xl mb-[70px]">
-          <h2 className="text-white">
+          <h2 className="text-white mt-[2rem]">
             All
             <span className="text-stone-400">Cakes</span>
           </h2>
@@ -174,6 +175,9 @@ export default function Home() {
 
       <CounterUpPage />
       <AboutPage />
+      <div className="bg-black">
+        <Footer />
+      </div>
     </>
   );
 }

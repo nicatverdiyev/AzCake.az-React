@@ -44,7 +44,7 @@ body{
 }
 .about-head-2{
     position: relative;
-    top: 200px;
+    top: 120px;
     // display: flex; 
     // gap: 10px;
     // flex-wrap: wrap;
@@ -54,7 +54,7 @@ body{
     & .about-box{
         max-width: 700px;
         // border: 1px solid red;
-        background-image: url(../../img/about-1.jpeg);
+        // background-image: url(../../img/about-1.jpeg);
   background-attachment: fixed;
 
 
@@ -64,7 +64,7 @@ body{
         }
 
         & p{
-            color: #e1dede;
+            color: #393838e1;
             font-size: 15px;
             font-weight: bold;
         }
@@ -74,6 +74,7 @@ body{
     content: "";
     background-image: inherit;
     filter: blur(5px); /* Bulanıklık miktarını ayarlayabilirsiniz */
+    // backdrop-filter: blur(5px);
     position: absolute;
     top: 0;
     left: 0;
